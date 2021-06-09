@@ -29,7 +29,9 @@ class App extends Component {
     return (
       <section className="conteudo">
         <FormularioCadastro criarNota={this.criarNota.bind(this)}/>
-        <ListaDeNotas notas={this.state.notas}/>
+        <ListaDeNotas
+        apagarNota={this.deletarNota.bind(this)}
+        notas={this.state.notas}/>
       </section>
     );
   }
