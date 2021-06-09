@@ -25,7 +25,7 @@ class App extends Component {
   deletarNota(){
     let arrayNotas = this.state.notas
     arrayNotas.splice(0,1)
-    this.setState({nota: arrayNotas})
+    this.setState({notas: arrayNotas})
   }
   render() {
     return (
