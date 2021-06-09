@@ -8,7 +8,7 @@ class CardNota extends Component {
       <section className="card-nota">
         <header className="card-nota_cabecalho">
           <h3 className="card-nota_titulo">{this.props.titulo}</h3>
-          <DeleteSVG onClick/>
+          <DeleteSVG onClick={this.props.deletarNota} />
         </header>
         <p className="card-nota_texto">{this.props.texto}</p>
       </section>
