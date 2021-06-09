@@ -22,6 +22,9 @@ class App extends Component {
     this.setState(novoEstado)
   }
 
+  deletarNota(){
+    console.log("DELETADO!!")
+  }
   render() {
     return (
       <section className="conteudo">
