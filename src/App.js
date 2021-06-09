@@ -22,9 +22,9 @@ class App extends Component {
     this.setState(novoEstado)
   }
 
-  deletarNota(){
+  deletarNota(index){
     let arrayNotas = this.state.notas
-    arrayNotas.splice(0,1)
+    arrayNotas.splice(index,1)
     this.setState({notas: arrayNotas})
   }
   render() {
