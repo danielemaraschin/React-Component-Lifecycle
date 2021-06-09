@@ -3,6 +3,11 @@ import "./estilo.css";
 import {ReactComponent as DeleteSVG} from "../../assets/img/delete.svg"  //salvou o caminho dentro da TAG DeleteSVG
 
 class CardNota extends Component {
+
+  apagar(){
+    const indice = this.props.indice;
+    this.props.apagarNota(indice)
+  }
   render() {
     return (
       <section className="card-nota">
