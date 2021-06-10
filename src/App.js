@@ -33,7 +33,7 @@ class App extends Component {
     return (
       <section className="conteudo">
         <FormularioCadastro criarNota={this.criarNota.bind(this)}/>
-        <main>
+        <main className="conteudo-principal">
           <ListaDeCategorias
           />
           <ListaDeNotas
