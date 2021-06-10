@@ -4,7 +4,6 @@ import FormularioCadastro from "./components/FormularioCadastro";
 import "./assets/App.css";
 import './assets/index.css';
 class App extends Component {
-
   constructor(){
     super();
 
@@ -27,17 +26,21 @@ class App extends Component {
     arrayNotas.splice(index,1)
     this.setState({notas: arrayNotas})
   }
+
   render() {
     return (
       <section className="conteudo">
         <FormularioCadastro criarNota={this.criarNota.bind(this)}/>
-        <ListaDeNotas
-        apagarNota={this.deletarNota.bind(this)}
-        notas={this.state.notas}/>
+        <main>
+          <ListaDeCategorias
+          />
+          <ListaDeNotas
+            apagarNota={this.deletarNota.bind(this)}
+            notas={this.state.notas}/>
+        </main>
       </section>
     );
   }
 }
-
 //new ListaDeNotas({notas:this.notas})
 export default App;
