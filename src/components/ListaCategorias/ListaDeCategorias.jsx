@@ -2,6 +2,11 @@ import React, { Component } from 'react';
 import "./estilo.css";
 
 class  ListaDeCategorias extends Component {
+    _handleEventoInput(e){
+        console.log(e.key)
+    }
+
+
     render() { 
         return (
             <section className="lista-categorias">
@@ -12,7 +17,11 @@ class  ListaDeCategorias extends Component {
                     <li className="lista-categorias_item">Categorias</li>
                     <li className="lista-categorias_item">Categorias</li>               
                 </ul>
-                <input type= "text" className="lista-categorias_input"/>
+                <input type= "text" 
+                    className="lista-categorias_input" 
+                    placeholder="Adicionar Categoria"
+                    onKeyUp={handleEventoInput}
+                />
             </section>
 
         );
