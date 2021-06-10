@@ -1,10 +1,18 @@
 import React, { Component } from 'react';
 
-class  extends Component {
-
+class  ListaDeCategorias extends Component {
     render() { 
-        return (  );
+        return (
+            <ul>
+                <li>Categorias</li>
+                <li>Categorias</li>
+                <li>Categorias</li>
+                <li>Categorias</li>
+                <li>Categorias</li>               
+
+            </ul>
+          );
     }
 }
  
-export default ;
+export default ListaDeCategorias;
