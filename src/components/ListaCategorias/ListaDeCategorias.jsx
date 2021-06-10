@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
+import "./estilo.css"
 
 class  ListaDeCategorias extends Component {
     render() { 
         return (
-            <section>
+            <section className="lista-categorias">
                 <ul>
                     <li>Categorias</li>
                     <li>Categorias</li>
@@ -11,7 +12,7 @@ class  ListaDeCategorias extends Component {
                     <li>Categorias</li>
                     <li>Categorias</li>               
                 </ul>
-                <input type= "text"/>
+                <input type= "text" className="lista-categorias_input"/>
             </section>
 
         );
