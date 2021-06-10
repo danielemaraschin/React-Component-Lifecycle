@@ -4,6 +4,9 @@ import "./estilo.css";
 class  ListaDeCategorias extends Component {
     _handleEventoInput(e){
         console.log(e.key)
+        if(e.key == "Enter"){
+            console.log("adicionar categoria")
+        }
     }
 
 
@@ -20,7 +23,7 @@ class  ListaDeCategorias extends Component {
                 <input type= "text" 
                     className="lista-categorias_input" 
                     placeholder="Adicionar Categoria"
-                    onKeyUp={handleEventoInput}
+                    onKeyUp={this._handleEventoInput.bind(this)}
                 />
             </section>
 
