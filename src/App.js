@@ -11,8 +11,8 @@ class App extends Component {
 
     this.state = {
       notas:[],
-      categorias:[]
-    }
+      categorias:["Trabalho", "Esportes"]
+    };
   }
 
   criarNota(titulo, texto){
@@ -35,7 +35,7 @@ class App extends Component {
       <section className="conteudo">
         <FormularioCadastro criarNota={this.criarNota.bind(this)}/>
         <main className="conteudo-principal">
-          <ListaDeCategorias
+          <ListaDeCategorias categorias
           />
           <ListaDeNotas
             apagarNota={this.deletarNota.bind(this)}
