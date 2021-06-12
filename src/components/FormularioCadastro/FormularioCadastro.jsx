@@ -31,7 +31,7 @@ class FormularioCadastro extends Component {
         onSubmit={this._criarNota.bind(this)}
       >
         <select className="form-cadastro_input">
-        {this.props.categorias.map((categoria) => {
+        {this.props.categorias.map(categoria =>{
           return <option>{categoria}</option>
         })}
         </select>
