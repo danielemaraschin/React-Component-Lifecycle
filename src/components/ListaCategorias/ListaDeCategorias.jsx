@@ -14,7 +14,7 @@ class ListaDeCategorias extends Component {
             <section className="lista-categorias">
                 <ul className="lista-categorias_lista">
                     {this.props.categorias.map((categoria, index) => {
-                        <li key={index}className="lista-categorias_item">{categoria}</li>
+                      return  <li key={index}className="lista-categorias_item">{categoria}</li>
                     })}
                 </ul>
                 <input type="text"
