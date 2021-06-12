@@ -5,6 +5,7 @@ import "./assets/App.css";
 import './assets/index.css';
 import ListaDeCategorias from "./components/ListaCategorias";
 
+//nosso app é stateful, recebe os estados
 class App extends Component {
   constructor(){
     super();

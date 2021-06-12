@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import "./estilo.css";
 
+//nossa lista de categorias não se importa com o estado, ela so usa elementos que foram passado para ela como props e desenha o que foi solicitado
 class ListaDeCategorias extends Component {
     _handleEventoInput(e) { //"e" é o evento
         console.log(e.key)
