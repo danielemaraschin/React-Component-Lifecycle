@@ -6,6 +6,7 @@ class FormularioCadastro extends Component {
     super(props);
     this.titulo ="";
     this.texto ="";
+    this.categoria = "Sem categoria";
   }
 
   _handleMudancaTitulo(evento){
