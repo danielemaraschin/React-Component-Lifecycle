@@ -16,7 +16,7 @@ class App extends Component {
     };
   }
 
-  criarNota(titulo, texto){
+  criarNota(titulo, texto, categoria){
     const novaNota = {titulo, texto};
     const novoArrayNotas = [...this.state.notas,novaNota]
     const novoEstado = {notas:novoArrayNotas}
