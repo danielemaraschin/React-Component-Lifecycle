@@ -17,14 +17,14 @@ class App extends Component {
     };
   }
 
-  criarNota(titulo, texto, categoria){
+ /* criarNota(titulo, texto, categoria){
     const novaNota = {titulo, texto, categoria};
     const novoArrayNotas = [...this.state.notas,novaNota]
     const novoEstado = {notas:novoArrayNotas}
     this.setState(novoEstado)
   }
 
-/*  adicionarCategoria(nomeCategoria){
+  adicionarCategoria(nomeCategoria){
     const novoArrayCategorias = [...this.state.categorias,nomeCategoria]
     const novoEstado = {...this.state, categorias:novoArrayCategorias};
     this.setState(novoEstado)

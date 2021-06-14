@@ -8,6 +8,10 @@ export default class ArrayDeNotas{
         this.notas.push()
 
     }
+
+    apagarNotas(indice){
+        this.notas.splice(indice,1)
+    }
 }
 
 class Nota{
