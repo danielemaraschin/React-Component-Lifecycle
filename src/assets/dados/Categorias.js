@@ -1,10 +1,10 @@
-export default class Categorias{
-        constructor(){
-            this.categorias = []
-        }
+export default class Categorias {
+    constructor() {
+        this.categorias = []
+    }
 
-adicionarCategoria(novaCategoria){
+    adicionarCategoria(novaCategoria) {
 
-    this.categoria.push(novaCategoria) //add no array a nova categoria
-  }
+        this.categoria.push(novaCategoria) //add no array a nova categoria
+    }
 }

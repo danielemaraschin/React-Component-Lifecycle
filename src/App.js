@@ -4,6 +4,7 @@ import FormularioCadastro from "./components/FormularioCadastro";
 import "./assets/App.css";
 import './assets/index.css';
 import ListaDeCategorias from "./components/ListaCategorias";
+import Categorias from "./assets/dados/Categorias";
 
 //nosso app é stateful, recebe os estados
 class App extends Component {
@@ -23,11 +24,11 @@ class App extends Component {
     this.setState(novoEstado)
   }
 
-  adicionarCategoria(nomeCategoria){
+/*  adicionarCategoria(nomeCategoria){
     const novoArrayCategorias = [...this.state.categorias,nomeCategoria]
     const novoEstado = {...this.state, categorias:novoArrayCategorias};
     this.setState(novoEstado)
-  }
+  }*/
 
   deletarNota(index){
     let arrayNotas = this.state.notas
