@@ -23,10 +23,10 @@ class App extends Component {
             criarNota={this.criarNota.bind(this)} />
           <main className="conteudo-principal">
             <ListaDeCategorias
-              adicionarCategoria={this.adicionarCategoria.bind(this)}
-              categorias={this.state.categorias} />
+              adicionarCategoria={this.categorias.adicionarCategoria}
+              categorias={this.categorias.categorias} />
             <ListaDeNotas
-              apagarNota={this.deletarNota.bind(this)}
+              apagarNota={this.apagarNota}
               notas={this.state.notas} />
           </main>
         </section>
