@@ -8,26 +8,26 @@ import Categorias from "./assets/dados/Categorias";
 
 //nosso app é stateful, recebe os estados
 class App extends Component {
-  constructor(){
+  constructor() {
     super();
 
-    render() {
-    return (
-      <section className="conteudo">
-        <FormularioCadastro 
-        categorias = {this.state.categorias}
-        criarNota={this.criarNota.bind(this)}/>
-        <main className="conteudo-principal">
-          <ListaDeCategorias
-          adicionarCategoria={this.adicionarCategoria.bind(this)}
-           categorias={this.state.categorias}/>
-          <ListaDeNotas
-            apagarNota={this.deletarNota.bind(this)}
-            notas={this.state.notas}/>
-        </main>
-      </section>
-    );
+    render(){
+      return (
+        <section className="conteudo">
+          <FormularioCadastro
+            categorias={this.state.categorias}
+            criarNota={this.criarNota.bind(this)} />
+          <main className="conteudo-principal">
+            <ListaDeCategorias
+              adicionarCategoria={this.adicionarCategoria.bind(this)}
+              categorias={this.state.categorias} />
+            <ListaDeNotas
+              apagarNota={this.deletarNota.bind(this)}
+              notas={this.state.notas} />
+          </main>
+        </section>
+      );
+    }
   }
-}
-//new ListaDeNotas({notas:this.notas})
-export default App;
+  //new ListaDeNotas({notas:this.notas})
+  export default App;
