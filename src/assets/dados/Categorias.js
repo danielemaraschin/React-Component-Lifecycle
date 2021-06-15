@@ -9,7 +9,7 @@ export default class Categorias{
     }
 
     notificar(){
-        this._inscritos.forEach(func => func ());
+        this._inscritos.forEach(func => func ()); //recebe como parametro a funcao 'func'que vai executar a func()
     }
 
     adicionarCategoria(novaCategoria){
