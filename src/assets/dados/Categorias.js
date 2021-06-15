@@ -4,8 +4,12 @@ export default class Categorias{
         this._inscritos = [];
     }
 
-    inscrever(){
+    inscrever(func){
         this._inscritos.push(func);
+    }
+
+    notificar(){
+        this._inscritos.forEach(func => func ());
     }
 
     adicionarCategoria(novaCategoria){
