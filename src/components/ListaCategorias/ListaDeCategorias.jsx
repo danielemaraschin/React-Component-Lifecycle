@@ -5,7 +5,7 @@ import "./estilo.css";
 class ListaDeCategorias extends Component {
 
     componentDidMount() {
-        this.props.categorias.inscrever(this._novasCategorias.bind());
+        this.props.categorias.inscrever(this._novasCategorias.bind(this));
     }
 
     _novasCategorias(categorias) {
