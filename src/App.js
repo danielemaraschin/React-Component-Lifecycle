@@ -5,11 +5,15 @@ import "./assets/App.css";
 import './assets/index.css';
 import ListaDeCategorias from "./components/ListaCategorias";
 import Categorias from "./assets/dados/Categorias";
+import ArrayDeNotas from "./assets/dados/notas";
 
 //nosso app é stateful, recebe os estados
 class App extends Component {
   constructor() {
     super();
+    this.categorias = new Categorias;
+    this.notas = new ArrayDeNotas
+  }
 
     render(){
       return (
