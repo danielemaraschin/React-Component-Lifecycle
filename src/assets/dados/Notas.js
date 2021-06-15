@@ -1,16 +1,16 @@
 export default class ArrayDeNotas{
     constructor(){
-        this.notas = []
+        this.notas = [];
     }
 
     adicionarNota(titulo, texto, categoria){
         const novaNota = new Nota(titulo, texto, categoria)
-        this.notas.push()
+        this.notas.push(novaNota)
 
     }
 
     apagarNotas(indice){
-        this.notas.splice(indice,1)
+        this.notas.splice(indice, 1);
     }
 }
 

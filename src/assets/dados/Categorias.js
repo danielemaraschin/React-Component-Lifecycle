@@ -5,6 +5,6 @@ export default class Categorias {
 
     adicionarCategoria(novaCategoria) {
 
-        this.categoria.push(novaCategoria) //add no array a nova categoria
+        this.categoria.push(novaCategoria) //add no array a nova categoria pelo push
     }
 }
