@@ -1,6 +1,7 @@
 export default class Categorias{
     constructor() {
         this.categorias = [];
+        this.inscritos = [];
     }
 
     adicionarCategoria(novaCategoria){
