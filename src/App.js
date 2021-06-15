@@ -26,7 +26,7 @@ class App extends Component {
               adicionarCategoria={this.categorias.adicionarCategoria}
               categorias={this.categorias.categorias} />
             <ListaDeNotas
-              apagarNota={this.apagarNota}
+              apagarNota={this.notas.apagarNota}
               notas={this.notas.notas} />
           </main>
         </section>
