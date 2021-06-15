@@ -14,7 +14,6 @@ class App extends Component {
     this.categorias = new Categorias;
     this.notas = new ArrayDeNotas;
   }
-
     render(){
       return (
         <section className="conteudo">
