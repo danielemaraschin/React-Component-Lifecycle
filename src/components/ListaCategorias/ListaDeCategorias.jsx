@@ -3,6 +3,14 @@ import "./estilo.css";
 
 //nossa lista de categorias não se importa com o estado, ela so usa elementos que foram passado para ela como props e desenha o que foi solicitado
 class ListaDeCategorias extends Component {
+
+    componentDidMount() {
+        this.props.categorias.inscrever(this._novasCategorias.bind());
+    }
+
+    _novasCategorias(categorias) {
+        console.log(categorias)
+    }
     _handleEventoInput(e) { //"e" é o evento
         console.log(e.key)
         if (e.key == "Enter") {
