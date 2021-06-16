@@ -19,14 +19,14 @@ class App extends Component {
         <section className="conteudo">
           <FormularioCadastro
             categorias={this.categorias.categorias}
-            criarNota={this.notas.criarNota} />
+            criarNota={this.notas.criarNota.bind(this.notas)} />
           <main className="conteudo-principal">
             <ListaDeCategorias
               adicionarCategoria={this.categorias.adicionarCategoria.bind(this.categorias)} //this.categoria pq eh so referente a esse atributo e nao a classe inteira
               categorias={this.categorias} />
             <ListaDeNotas
               apagarNota={this.notas.apagarNota}
-              notas={this.notas.notas} />
+              notas={this.notas} />
           </main>
         </section>
       );
