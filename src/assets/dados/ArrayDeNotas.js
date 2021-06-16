@@ -10,7 +10,7 @@ export default class ArrayDeNotas{
 
     notificar() {
         this._inscritos.forEach(func => { //recebe como parametro a funcao 'func'que vai executar a func()
-            func(this.categorias); //pega as novas informacoes da fonte de dados do array de categorias e notifica os inscritos
+            func(this.notas); //pega as novas informacoes da fonte de dados do array de notas e notifica os inscritos
         });
     }
 
@@ -18,11 +18,13 @@ export default class ArrayDeNotas{
     adicionarNota(titulo, texto, categoria){
         const novaNota = new Nota(titulo, texto, categoria);
         this.notas.push(novaNota);
+        this.notificar()
 
     }
 
     apagarNotas(indice){
         this.notas.splice(indice, 1);
+        this.notificar()
     }
 }
 
