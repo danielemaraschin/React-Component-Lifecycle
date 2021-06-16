@@ -23,7 +23,7 @@ class App extends Component {
           <main className="conteudo-principal">
             <ListaDeCategorias
               adicionarCategoria={this.categorias.adicionarCategoria.bind(this.categorias)} //this.categoria pq eh so referente a esse atributo e nao a classe inteira
-              categorias={this.categorias} />
+              categorias={this.categorias}/>
             <ListaDeNotas
               apagarNota={this.notas.apagarNota}
               notas={this.notas} />
