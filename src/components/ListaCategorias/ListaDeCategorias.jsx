@@ -4,11 +4,16 @@ import "./estilo.css";
 //nossa lista de categorias não se importa com o estado, ela so usa elementos que foram passado para ela como props e desenha o que foi solicitado
 class ListaDeCategorias extends Component {
 
+    constructor(){
+        super();
+        this.state =  {categorias: []}
+    }
     componentDidMount() {
         this.props.categorias.inscrever(this._novasCategorias.bind(this));
     }
 
-    _novasCategorias(categorias) {
+    _novasCategorias(categorias) {              //usa spread operator
+        this.setState(...this.state, categorias) //muda o estado para estado antigo+ novas categorias
         console.log(categorias)
     }
     _handleEventoInput(e) { //"e" é o evento
