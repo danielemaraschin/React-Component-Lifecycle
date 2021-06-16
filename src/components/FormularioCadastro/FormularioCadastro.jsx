@@ -7,11 +7,25 @@ class FormularioCadastro extends Component {
     this.titulo ="";
     this.texto ="";
     this.categoria = "Sem categoria";
+    this.state = { categorias: []}
+  }
+
+  componentDidMount(){
+    this.props.categorias.inscrever(this._novasCategorias.bind(this));
+  }
+
+  _novasCategorias(categorias){
+    this.setState({...this.state, categorias})
   }
 
   _handleMudancaTitulo(evento){
     evento.stopPropagation();
     this.titulo = evento.target.value;
+  }
+
+  _handleMudancaCategoria(evento){
+    evento.stopPropagation();
+    this.texto = evento.target.value;
   }
 
   _handleMudancaTexto(evento){
