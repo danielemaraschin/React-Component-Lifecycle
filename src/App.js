@@ -18,8 +18,8 @@ class App extends Component {
       return (
         <section className="conteudo">
           <FormularioCadastro
-            categorias={this.categorias.categorias}
-            criarNota={this.notas.criarNota.bind(this.notas)} />
+            categorias={this.categorias}
+            criarNota={this.notas.criarNota} />
           <main className="conteudo-principal">
             <ListaDeCategorias
               adicionarCategoria={this.categorias.adicionarCategoria.bind(this.categorias)} //this.categoria pq eh so referente a esse atributo e nao a classe inteira
