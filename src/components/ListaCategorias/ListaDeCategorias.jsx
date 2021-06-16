@@ -12,9 +12,8 @@ class ListaDeCategorias extends Component {
         this.props.categorias.inscrever(this._novasCategorias.bind(this));
     }
 
-    _novasCategorias(categorias) {              //usa spread operator
-        this.setState(...this.state, categorias) //muda o estado para estado antigo+ novas categorias
-        console.log(categorias)
+    _novasCategorias(categorias) {              
+        this.setState({...this.state, categorias}) //muda o estado para estado antigo+ novas categorias
     }
     _handleEventoInput(e) { //"e" é o evento
         console.log(e.key)
