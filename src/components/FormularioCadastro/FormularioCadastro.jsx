@@ -13,11 +13,11 @@ class FormularioCadastro extends Component {
   }
   componentDidMount(){
     //aqui o bind recebe uma funcao como parametro e retorna uma nova funcao como parametro
-    this.props.categorias.inscrever(this._novasCategorias.bind(this));
+    this.props.categorias.inscrever(this._novasCategorias);
    
   }  
   componentWillUnmount(){
-    this.props.categorias.desinscrever(this._novasCategorias.bind(this));
+    this.props.categorias.desinscrever(this._novasCategorias);
   }
  
 
