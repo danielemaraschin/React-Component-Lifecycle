@@ -7,7 +7,7 @@ class FormularioCadastro extends Component {
     this.titulo ="";
     this.texto ="";
     this.categoria = "Sem categoria";
-    this.state = { categorias: []}
+    this.state = {categorias:[]}
   }
 
   componentDidMount(){
