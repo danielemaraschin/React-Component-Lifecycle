@@ -8,6 +8,11 @@ export default class ArrayDeNotas{
         this._inscritos.push(func);
     }
 
+    desinscrever(func){
+        this._inscritos = this._inscritos.filter(f => f !== func);
+//filtra todos que nao sao a funcao do objeto de inscritos
+    }
+    
     notificar() {
         this._inscritos.forEach(func => { //recebe como parametro a funcao 'func'que vai executar a func()
             func(this.notas); //pega as novas informacoes da fonte de dados do array de notas e notifica os inscritos
