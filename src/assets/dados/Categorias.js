@@ -10,7 +10,7 @@ export default class Categorias {
 
     desinscrever(func){
         this._inscritos = this._inscritos.filter(f => f !== func);
-
+//filtra todos que nao sao a funcao do objeto de inscritos
     }
 
     notificar() {
