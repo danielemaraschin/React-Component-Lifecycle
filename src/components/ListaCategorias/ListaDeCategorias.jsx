@@ -4,27 +4,27 @@ import "./estilo.css";
 //nossa lista de categorias não se importa com o estado, ela so usa elementos que foram passado para ela como props e desenha o que foi solicitado
 class ListaDeCategorias extends Component {
 
-    constructor(){
+    constructor() {
         super();
-        this.state =  {categorias: []};
+        this.state = { categorias: [] };
         this._novasCategorias = this._novasCategorias.bind(this)
     }
     componentDidMount() {
         this.props.categorias.inscrever(this._novasCategorias);
     }
 
-    componentWillUnmount(){
+    componentWillUnmount() {
         this.props.categorias.desinscrever(this._novasCategorias);
-    }  
     }
 
-    _novasCategorias(categorias) {              
-        this.setState({...this.state, categorias}) //muda o estado para estado antigo+ novas categorias
+
+    _novasCategorias(categorias) {
+        this.setState({ ...this.state, categorias }) //muda o estado para estado antigo+ novas categorias
     }
     _handleEventoInput(e) { //"e" é o evento
         if (e.key == "Enter") {
             let valorCategoria = e.target.value; //target value vai pegar o valor do evento que eh o valor add no input
-            this.props.adicionarCategoria(valorCategoria);
+            this.props.adicionarCategoria(valorCategoria)
         }
     }
 
