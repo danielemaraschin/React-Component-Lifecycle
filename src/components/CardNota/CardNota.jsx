@@ -6,7 +6,7 @@ class CardNota extends Component {
 
   apagar(){
     const indice = this.props.indice;
-    this.props.apagarNota(indice);
+    this.props.apagarNotas(indice);
   }
   render() {
     return (
