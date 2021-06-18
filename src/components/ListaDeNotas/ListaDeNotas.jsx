@@ -8,7 +8,11 @@ class ListaDeNotas extends Component {
   }
 
   componentDidMount(){
-    this.props.notas.inscrever(this._novasNotas.bind(this));//se inscrever na fonte de dados notas
+    this.props.notas.inscrever(this._novasNotas.bind(this));//se inscrever na fonte de dados ArrayNotas
+  }
+
+  componentWillUnmount(){
+    this.props.notas.desinscrever(this._novasNotas.bind(this))
   }
 
   _novasNotas(notas){
