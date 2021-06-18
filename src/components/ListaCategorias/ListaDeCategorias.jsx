@@ -12,6 +12,11 @@ class ListaDeCategorias extends Component {
         this.props.categorias.inscrever(this._novasCategorias.bind(this));
     }
 
+    componentWillUnmount(){
+        this.props.categorias.inscrever(this._novasCategorias);
+    }  
+    }
+
     _novasCategorias(categorias) {              
         this.setState({...this.state, categorias}) //muda o estado para estado antigo+ novas categorias
     }
