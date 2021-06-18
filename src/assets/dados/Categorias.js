@@ -23,6 +23,6 @@ export default class Categorias {
 
     adicionarCategoria(novaCategoria) {
         this.categorias.push(novaCategoria); //add no array a nova categoria pelo push
-        this.notificar()
+        this.notificar();
     }
 }
