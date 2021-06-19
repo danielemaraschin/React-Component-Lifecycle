@@ -11,8 +11,8 @@ import ArrayDeNotas from "./assets/dados/ArrayDeNotas";
 class App extends Component {
   constructor() {
     super();
-    this.categorias = new Categorias;
-    this.notas = new ArrayDeNotas;
+    this.categorias = new Categorias();
+    this.notas = new ArrayDeNotas();
   }
     render(){
       return (
@@ -23,10 +23,12 @@ class App extends Component {
           <main className="conteudo-principal">
             <ListaDeCategorias
               adicionarCategoria={this.categorias.adicionarCategoria.bind(this.categorias)} //this.categoria pq eh so referente a esse atributo e nao a classe inteira
-              categorias={this.categorias}/>
-            <ListaDeNotas
-              apagarNota={this.notas.apagarNota.bind(this.notas)}
-              notas={this.notas} />
+              categorias={this.categorias}
+              />
+                    <ListaDeNotas
+            apagarNota={this.notas.apagarNota.bind(this.notas)}
+            notas={this.notas}
+          />
           </main>
         </section>
       );
