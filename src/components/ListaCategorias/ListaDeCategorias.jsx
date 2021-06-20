@@ -6,7 +6,7 @@ class ListaDeCategorias extends Component {
 
     constructor() {
         super();
-        this.state = { categorias: [] };
+        this.state = {categorias:[]};
         this._novasCategorias = this._novasCategorias.bind(this)
     }
     componentDidMount() {
@@ -24,7 +24,7 @@ class ListaDeCategorias extends Component {
     _handleEventoInput(e) { //"e" é o evento
         if (e.key == "Enter") {
             let valorCategoria = e.target.value; //target value vai pegar o valor do evento que eh o valor add no input
-            this.props.adicionarCategoria(valorCategoria)
+            this.props.adicionarCategoria(valorCategoria);
         }
     }
 
