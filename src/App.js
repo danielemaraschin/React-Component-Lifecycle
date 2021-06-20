@@ -5,7 +5,7 @@ import "./assets/App.css";
 import './assets/index.css';
 import ListaDeCategorias from "./components/ListaCategorias";
 import Categorias from "./assets/dados/Categorias";
-import ArrayDeNotas from "./assets/dados/ArrayDeNotas";
+import ArrayDeNotas from "./assets/dados/Notas";
 
 //nosso app é stateful, recebe os estados
 class App extends Component {
@@ -25,9 +25,9 @@ class App extends Component {
               adicionarCategoria={this.categorias.adicionarCategoria.bind(this.categorias)} //this.categoria pq eh so referente a esse atributo e nao a classe inteira
               categorias={this.categorias}
               />
-                    <ListaDeNotas
-            apagarNota={this.notas.apagarNota.bind(this.notas)}
-            notas={this.notas}
+            <ListaDeNotas
+              apagarNota={this.notas.apagarNota.bind(this.notas)}
+              notas={this.notas}
           />
           </main>
         </section>

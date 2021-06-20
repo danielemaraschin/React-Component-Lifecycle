@@ -1,14 +1,14 @@
+  
 import React, { Component } from "react";
 import "./estilo.css";
-import {ReactComponent as DeleteSVG} from "../../assets/img/delete.svg"  //salvou o caminho dentro da TAG DeleteSVG
-
+import {ReactComponent as DeleteSVG} from "../../assets/img/delete.svg"
 class CardNota extends Component {
 
   apagar(){
     const indice = this.props.indice;
     this.props.apagarNota(indice);
   }
-
+  
   render() {
     return (
       <section className="card-nota">
